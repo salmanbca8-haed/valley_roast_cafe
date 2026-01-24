@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Valley Roast Café – a peaceful coffee spot serving premium brews in the heart of the valley. Relax, sip, and enjoy handcrafted coffee.">
+
+        <meta name="author" content="">
+
+        <title>Valley Roast Cafe</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-ebook-landing.css" rel="stylesheet">
+        
+</head>
+<body>
+    <div class="se" style="background:#c7a26d;">
+        <img src="../templatemo_588_ebook_landing/images/stream.gif" alt="" height="200px">
+    </div>
+
+    
+<section class="section-padding order-section" id="section_8">
+     <div class=" ms-auto me-3">
+                        <a href="./index.php" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
+                          <i class="btn-icon bi-arrow-left"></i>            
+                            <span>Back</span><!-- duplicated another one below for mobile -->
+                        </a>
+                    </div>
+  
+    <div class="container">
+    
+    <section class="coffee-mood">
+  <h2>How Are You Feeling Today?</h2>
+  <div class="mood-buttons">
+    <button onclick="showMood('calm')">Calm</button>
+    <button onclick="showMood('focus')">Focused</button>
+    <button onclick="showMood('creative')">Creative</button>
+  </div>
+  <p id="mood-result"></p>
+
+<div class="customer-info">
+ <form action=""> 
+  <input
+    type="text"
+    id="customerName"
+    placeholder="Your Name"
+    required
+  >
+
+  <input
+    type="tel"
+    id="customerPhone"
+    placeholder="Phone Number"
+    required
+  ><br>
+  
+</div>
+
+
+
+</section>
+
+    <div class="text-center mb-5">
+      <h6>Order Now</h6>
+      <h2>Get Your Favorite Brews</h2>
+    </div>
+
+    <div class="row">
+
+      <!-- Hot Brews -->
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="order-card text-center">
+          <h4>☕ Hot Brews</h4>
+          <ul>
+            <li>
+              Espresso <span>₹90</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Cappuccino <span>₹120</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Latte <span>₹130</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Americano <span>₹110</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cold Coffee -->
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="order-card text-center">
+          <h4>🧊 Cold Coffee</h4>
+          <ul>
+            <li>
+              Classic Cold Brew <span>₹140</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Chocolate Cold Coffee <span>₹160</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Caramel Frappe <span>₹170</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Vanilla Iced Latte <span>₹150</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Snacks & Desserts -->
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="order-card text-center">
+          <h4>🥐 Snacks & Desserts</h4>
+          <ul>
+            <li>
+              Croissant <span>₹90</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Chocolate Muffin <span>₹100</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Brownie <span>₹120</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Cookies <span>₹80</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <center>
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="order-card text-center">
+          <h4>🔥 Best Sellers</h4>
+          <ul>
+            <li>
+              Valley Signature Brew <span>₹100</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Cold Brew Caramel <span>₹110</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Mocha Delight <span>₹125</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+            <li>
+              Browine & Brew Combo <span>₹90</span>
+              <input type="number" min="0" value="0" class="quantity">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    </center>
+    <!-- Live Total Display -->
+<div class="text-center mt-3 mb-3">
+    <h3>💵 Total: ₹<h3 id="liveTotal">0</h3></h3>
+</div>
+
+
+
+
+    <div class="text-center mt-4">
+      <button class="custom-btn btn-order" id="placeOrder">Place Order</button>
+    </div>
+  </div>
+  </form>
+
+</section>
+
+            <div id="todays-brew">
+  ☕ Today’s Brew: Mocha Delight
+</div>
+<button id="nightToggle" aria-label="Toggle Night Mode">🌙</button>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ======================= JS ======================= -->
+<script>
+ 
+
+  
+$(document).ready(function() {
+
+  // Smooth scroll for desktop & mobile
+  $('.smoothscroll, .click-scroll').on('click', function (e) {
+      e.preventDefault();
+      var target = $(this).attr('href');
+      var headerHeight = $('.navbar').outerHeight() || 70;
+
+      $('html, body').animate({
+          scrollTop: $(target).offset().top - headerHeight
+      }, 800);
+
+      // Close mobile menu if open
+      $(".navbar-collapse").collapse('hide');
+  });
+
+  // Place Order button
+ 
+ const orderBtn = document.getElementById("placeOrder");
+orderBtn.addEventListener("click", function () {
+
+    // ✅ GET USER DETAILS
+    const customerName = document.getElementById("customerName").value.trim();
+    const customerPhone = document.getElementById("customerPhone").value.trim();
+
+    if (!customerName || !customerPhone) {
+        alert("⚠ Please enter your name and phone number.");
+        return;
+    }
+
+    // (Optional) phone validation for India
+    if (!/^[6-9]\d{9}$/.test(customerPhone)) {
+        alert("⚠ Please enter a valid 10-digit phone number.");
+        return;
+    }
+
+    const items = document.querySelectorAll(".order-card ul li");
+    let orderSummary = 
+`🧾 Your Order Summary
+
+👤 Name: ${customerName}
+📞 Phone: ${customerPhone}
+
+----------------------
+`;
+
+    let grandTotal = 0;
+    let hasItems = false;
+
+    items.forEach(item => {
+        const name = item.childNodes[0].textContent.trim();
+        const price = parseInt(item.querySelector("span").textContent.replace("₹",""));
+        const qty = parseInt(item.querySelector("input.quantity").value);
+
+        if (qty > 0) {
+            const total = price * qty;
+            grandTotal += total;
+            hasItems = true;
+
+            orderSummary += `🍽 Item: ${name}\n`;
+            orderSummary += `💰 Price: ₹${price}\n`;
+            orderSummary += `🔢 Quantity: ${qty}\n`;
+            orderSummary += `📦 Total: ₹${total}\n----------------------\n`;
+        }
+    });
+
+    if (!hasItems) {
+        alert("⚠ Please select at least one item.");
+        return;
+    }
+
+    orderSummary += `\n💵 Grand Total: ₹${grandTotal}`;
+    alert(orderSummary);
+
+    // Optional: scroll to order section on mobile
+    var headerHeight = $('.navbar').outerHeight() || 70;
+    $('html, body').animate({
+        scrollTop: $('#section_8').offset().top - headerHeight
+    }, 600);
+});
+
+});
+
+function showMood(type) {
+  const result = document.getElementById("mood-result");
+  let text = "";
+
+  if (type === "calm") text = "☕ Latte – Smooth, gentle, and peaceful.";
+  if (type === "focus") text = "☕ Espresso – Sharp, bold, and energizing.";
+  if (type === "creative") text = "☕ Mocha – Rich, expressive, and inspiring.";
+
+  result.textContent = text;
+  result.style.opacity = 1;
+}
+ document.addEventListener('mousemove', e => {
+    const steam = document.createElement('span');
+    steam.className = 'cursor-steam';
+    steam.style.left = e.pageX + 'px';
+    steam.style.top = e.pageY + 'px';
+    document.body.appendChild(steam);
+
+    setTimeout(() => steam.remove(), 1200);
+  });
+    const toggle = document.getElementById('nightToggle');
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('night-mode');
+    toggle.textContent = document.body.classList.contains('night-mode') ? '☀️' : '🌙';
+  });
+// Live Total Update
+function updateLiveTotal() {
+    const items = document.querySelectorAll(".order-card ul li");
+    let total = 0;
+
+    items.forEach(item => {
+        const price = parseInt(item.querySelector("span").textContent.replace("₹",""));
+        const qty = parseInt(item.querySelector("input.quantity").value) || 0;
+        total += price * qty;
+    });
+
+    document.getElementById("liveTotal").textContent = total;
+}
+
+// Attach event listeners to all quantity inputs
+document.querySelectorAll(".order-card ul li input.quantity").forEach(input => {
+    input.addEventListener("input", updateLiveTotal);
+});
+
+// Call it initially in case some values are preset
+updateLiveTotal();
+
+
+</script>
+
+<!-- Custom JS (ADD HERE) -->
+<script src="js/custom.js"></script>
+</body>
+
+</body>
+</html>
